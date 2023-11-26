@@ -35,6 +35,7 @@ body {
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .bg-dark {
@@ -414,10 +415,6 @@ body {
     background-color: var(--cloud);
 }
 
-.team-item img {
-    width: 100%;
-}
-
 .team-name {
     color: var(--navyblue);
     font-size: 20px;
@@ -433,6 +430,7 @@ body {
 
 .team img {
     display: block;
+    width: 100%;
 }
 
 .team-caption {
@@ -464,6 +462,8 @@ body {
 /*CUSTOMERS STYLING*/
 .customer-icon {
     border: 1px solid var(--lightslate);
+    padding: 16px 32px;
+    flex-basis: calc(100% / 2 - 30px);
 }
 
 .customer-icon svg {
@@ -589,8 +589,13 @@ body {
     width: 768px;
 }
 
-.about-item, .team-item {
+.about-item,
+.team-item {
    flex-basis: calc(100% / 2 - 30px)
+}
+
+.customer-icon {
+    flex-basis: calc(100% / 3 - 30px);
 }
 
 .desktop-nav {
@@ -607,8 +612,13 @@ body {
     width: 1200px;
 }
 
-.about-item, .team-item {
+.about-item, 
+.team-item {
     flex-basis: calc(100% / 4 - 30px);
+}
+
+.customer-icon {
+    flex-basis: calc(100% / 6- 30px);
 }
 
 .about-icon {
